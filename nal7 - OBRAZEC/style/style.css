@@ -27,7 +27,7 @@
     transform: translate(-50%, -50%);
     color: rgb(8, 8, 8);
     font-size: 50px;
-    font-family: "Copperplate",;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -143,24 +143,56 @@
     border-radius: 20px;
     overflow: hidden;
 }
+
 .desc{
-    border: 1px solid;
     width: 200px;
     height: 110px;
-    font-size: 20px;
-    font-weight: bold;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    text-align: center;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+}
+.price h5{  
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 20px;
+    
+}
+
+.button{
+    display: flex;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
 }
 
 .desc input[type=submit]{
     position: relative;
-    top: 30px;
     width: 150px;
     height: 30px;
     font-size: 15px;
     font-weight: bold;
     color: white;
     background-color: rgb(53, 179, 53);
-    border: 0;
+    border: 0px;
     border-radius: 20px;
 }
 
@@ -168,19 +200,16 @@
     background-color: rgb(56, 105, 56);
 }
 
-.desc h4,h5{
+.desc h4{
     text-align: center;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-}
+
+
 
 #right-container{
-    z-index: 2;
     width: 450px;
     height: 900px;
     border-radius: 0 60px 60px 0;
@@ -194,6 +223,7 @@
     text-align: left;
     line-height: 100px;
     font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #right-header h1, img{
@@ -222,6 +252,12 @@
     height: 20%;
 }
 
+#cart input[type=number]{
+    position: relative;
+    left: 100px;
+    width: 30px;
+}
+
 #cart > div:hover{
     background-color: rgba(124, 243, 148, 0.42);
 }
@@ -229,7 +265,6 @@
 #cart #img{
     width: 80px;
     height: 80px;
-    border: 1px solid;
     margin: 10px 5px 10px 10px;
     border-radius: 10px;
 }
@@ -240,20 +275,62 @@
     border-radius: 10px;
 }
 
-#cart #cart-desc{
+#cart-desc{
     width: 270px;
     height: 80px;
-    border: 1px solid;
     margin: 10px 0;
-    text-align: center;
-    line-height: 80px;
 }
 
-#total{
+
+
+.description{
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 20px;
+}
+
+.description p{
+    margin-left: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+#cart-desc input[type=number]{
+    position: fixed;
+    left: 230px;
+    width: 40px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+    border: 2px solid green;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#cart-desc input[type=number]:focus{
+    border: 0;
+    border-radius: 10px;
+}
+
+#total-price{
     width: 380px;
     height: 20px;
+    font-size: 20px;
     margin: 2px auto;
     text-align: right;
+}
+
+.checkout-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 40px;
 }
 
 #right-container input[type=submit]{
