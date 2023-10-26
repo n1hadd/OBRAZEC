@@ -160,8 +160,71 @@
                 <h4>Total: $</h4>
             </div>
             
-            <span class="checkout-button"><input type="submit" value="Checkout"></span>
+            <span class="checkout-button"><button id="showPopup">Checkout</button></span>
         </div>
-    </div>    
+    </div>
+
+    <!--|=========================================| PAYMENT |========================================================|-->
+    <div id="popup" class="popup">
+        <div id="cart2">
+
+        </div>
+        
+        <div class="popup-container">
+            <div class="header2">
+                <span class="back" id="goBack">&larr;</span>
+                <span class="heading2">Checkout</span>
+            </div>
+
+            <div class="main2">
+                <span class="price2"><h3>$25,8</h3></span>
+                <div class="payment-container">
+                    <div class="form">
+                        <span class="head2"><hr class="costum"/>Payment Methods<hr class="costum"/></span>
+                        <span class="payment-methods">
+                            <span class="mastercard"><img src="slike/mastercard.png" alt=""></span>
+                            <span class="visa"><img src="slike/visa.webp" alt=""></span>
+                        </span>
+                        <span class="inputs">
+                            <span class="card-name">
+                                <span class="center">
+                                    <h4>Name on Card</h4>
+                                    <input type="text" placeholder="John More Doe">
+                                </span>
+                            </span>
+
+                            <span class="card-num">
+                                <span class="center">
+                                    <h4>Credit Card Number</h4>
+                                    <input type="text" placeholder="1111-2222-3333-4444">
+                                </span>
+                            </span>
+
+                            <span class="exp-date">
+                                <span class="section1">
+                                    <h4>Exp month/year</h4>
+                                    <input type="text" placeholder="MM/YY">
+                                </span>
+
+                                <span class="section2">
+                                    <h4>CCV</h4>
+                                    <input type="text" placeholder="888">
+                                </span>
+                            </span>
+                        </span>
+                        <span class="pay">
+                            <input type="submit" value="Pay Now">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="delivery-address">
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
