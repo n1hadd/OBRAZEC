@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>FitMeals Food Delivery</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="slike/favicon-16x16.png">
 </head>
 
 <body>
     <div id="container">
         <div id="left-container">
-            <span id="left-header"><h1>Title</h1></span>
-            <hr class="head"/>
+            <div id="left-header">
+                <span id="logo">
+                    <img src="slike/logo.png" alt="">
+                </span>
+                <span id="title">
+                    <h1>Order Food Online</h1>
+                </span>
+            </div>
             <span id="header"><h1>Categories</h1><input type="text" name="search" placeholder="Search..."></span>
             <div id="categories">             
                 <ul>
@@ -180,7 +187,11 @@
                 <span class="price2"><h3>$25,8</h3></span>
                 <div class="payment-container">
                     <div class="form">
-                        <span class="head2"><hr class="costum"/>Payment Methods<hr class="costum"/></span>
+                        <form>
+                        <span class="head2">
+                            <hr class="costum" />Payment Methods
+                            <hr class="costum" />
+                        </span>
                         <span class="payment-methods">
                             <span class="mastercard"><img src="slike/mastercard.png" alt=""></span>
                             <span class="visa"><img src="slike/visa.webp" alt=""></span>
@@ -192,20 +203,20 @@
                                     <input type="text" placeholder="John More Doe">
                                 </span>
                             </span>
-
+                        
                             <span class="card-num">
                                 <span class="center">
                                     <h4>Credit Card Number</h4>
                                     <input type="text" placeholder="1111-2222-3333-4444">
                                 </span>
                             </span>
-
+                        
                             <span class="exp-date">
                                 <span class="section1">
                                     <h4>Exp month/year</h4>
                                     <input type="text" placeholder="MM/YY">
                                 </span>
-
+                        
                                 <span class="section2">
                                     <h4>CCV</h4>
                                     <input type="text" placeholder="888">
@@ -215,6 +226,7 @@
                         <span class="pay">
                             <input type="submit" value="Pay Now">
                         </span>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -226,5 +238,6 @@
 
     </div>
     <script src="script.js"></script>
+    <script src="zoom.js"></script>
 </body>
 </html>
