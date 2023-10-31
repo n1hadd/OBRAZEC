@@ -10,9 +10,3 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevents the form from submitting normally
 });
 
-var screenHeight = screen.height;
-if (screenHeight < 800) {
-  $('body').css('zoom', 0.75);
-} else {
-     $('body').css('zoom', 1);
-}

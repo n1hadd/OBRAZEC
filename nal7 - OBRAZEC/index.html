@@ -5,6 +5,7 @@
     <title>FitMeals Food Delivery</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="icon" type="image/x-icon" href="slike/favicon-16x16.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -173,8 +174,48 @@
 
     <!--|=========================================| PAYMENT |========================================================|-->
     <div id="popup" class="popup">
-        <div id="cart2">
+        <div id="summary">
+            <div id="summary-head">
+                <h3>Order Summary</h3>
+            </div>
 
+            <div id="order-summary">
+                <div id="table">
+                    <span class="row1">
+                        <span class="title2"><h4>QTY</h4></span>
+                        <h4>1</h4>
+                        <h4>2</h4>
+                        <h4>1</h4>
+                        <h4>1</h4>
+                        <h4>2</h4>
+                    </span>
+    
+                    <span class="row2">
+                        <span class="title2"><h4>ITEM</h4></span>
+                        <h4>Chicken Burger</h4>
+                        <h4>Pizza Margharita</h4>
+                        <h4>Coca Cola (0.75l)</h4>
+                        <h4>Pasta Bolognese</h4>
+                        <h4>Chocolate Ice Cream</h4>
+                    </span>
+    
+                    <span class="row3">
+                        <span class="title2"><h4>PRICE</h4></span>
+                        <h4>5.50$</h4>
+                        <h4>8.00$</h4>
+                        <h4>1.50$</h4>
+                        <h4>4.50$</h4>
+                        <h4>2.50$</h4>
+                    </span>
+                </div>
+                <div id="price">
+                    <h4>Total: 22.00$</h4>
+                </div>
+
+                <div id="edit">
+                    <button>Edit Order</button>
+                </div>
+            </div>
         </div>
         
         <div class="popup-container">
@@ -187,44 +228,44 @@
                 <span class="price2"><h3>$25,8</h3></span>
                 <div class="payment-container">
                     <div class="form">
-                        <form>
+                        <form id="checkoutForm" onsubmit="makePayment(event)">
                         <span class="head2">
-                            <hr class="costum" />Payment Methods
+                            <hr class="costum" />Payment Details
                             <hr class="costum" />
                         </span>
                         <span class="payment-methods">
                             <span class="mastercard"><img src="slike/mastercard.png" alt=""></span>
-                            <span class="visa"><img src="slike/visa.webp" alt=""></span>
+                            <span class="visa" ><img src="slike/visa.webp" alt=""></span>
                         </span>
                         <span class="inputs">
                             <span class="card-name">
                                 <span class="center">
-                                    <h4>Name on Card</h4>
-                                    <input type="text" placeholder="John More Doe">
+                                    <label for="creditCardName">Name on Card:</label>
+                                    <input type="text" placeholder="John More Doe" required>
                                 </span>
                             </span>
                         
                             <span class="card-num">
                                 <span class="center">
-                                    <h4>Credit Card Number</h4>
-                                    <input type="text" placeholder="1111-2222-3333-4444">
+                                    <label for="creditCardNumber">Credit Card Number:</label>
+                                    <input type="text" id="creditCard" maxlength="19" placeholder="1111 2222 3333 4444" oninput="sanitizeInput(event)" required>
                                 </span>
                             </span>
                         
                             <span class="exp-date">
                                 <span class="section1">
-                                    <h4>Exp month/year</h4>
-                                    <input type="text" placeholder="MM/YY">
+                                    <label for="expDate">Exp. month/year</label>
+                                    <input type="text" id="expDate" maxlength="5" placeholder="MM/YY" required>
                                 </span>
                         
                                 <span class="section2">
-                                    <h4>CCV</h4>
-                                    <input type="text" placeholder="888">
+                                    <label for="ccv">CCV</label>
+                                    <input type="text" id="ccv" name="ccv" required pattern="\d{3}" oninput="restrictToNumeric(event);" minlength="3" placeholder="888">
                                 </span>
                             </span>
                         </span>
                         <span class="pay">
-                            <input type="submit" value="Pay Now">
+                            <button oneclick="makePayment()">Pay now</button>
                         </span>
                         </form>
                     </div>
@@ -233,11 +274,19 @@
         </div>
 
         <div id="delivery-address">
+            <div id="del-head">
+                <h3>Delivery Address</h3>
+            </div>
 
+            <div id="del-form">
+
+            </div>
         </div>
 
     </div>
     <script src="script.js"></script>
+    <script src="patterns.js"></script>
+    <script src="makePayment.js"></script>
     <script src="zoom.js"></script>
 </body>
 </html>
