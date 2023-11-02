@@ -169,7 +169,7 @@ body{
     height: 100%;
     border-radius: 20px;
     overflow: hidden;
-    background-image: linear-gradient(rgba(44, 238, 44, 0.185), white);
+    background-image: linear-gradient(rgba(44, 238, 44, 0.26), white);
 }
 
 .desc{
@@ -347,7 +347,7 @@ body{
 }
 
 .description p{
-    margin-left: 30px;
+    margin-left: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
 }
@@ -756,7 +756,7 @@ hr.costum{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 55%;
+    height: 70%;
 }
 
 .title2{
@@ -776,7 +776,7 @@ hr.costum{
 }
 
 .col1 h4{
-    padding-bottom: 10px;
+    padding-bottom: 19px;
 }
 
 .col2{
@@ -790,7 +790,8 @@ hr.costum{
 }
 
 .col2 h4{
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+
 }
 
 .col3{
@@ -802,7 +803,7 @@ hr.costum{
 }
 
 .col3 h4{
-    padding-bottom: 10px;
+    padding-bottom: 19px;
 }
 
 #price{
@@ -820,8 +821,8 @@ hr.costum{
 
 #edit{
     width: 100%;
-    height: 100px;
-    margin-top: 15px;
+    height: 50px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
