@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #3dc75410;
+    background-color: #3dc75411;
 }
 
 #container{
@@ -24,7 +24,6 @@ body{
     width: 750px;
     height: 900px;
     border-radius: 60px 0 0 60px;
-    border-right: 1px solid;   
 }
 
 #left-header{
@@ -228,7 +227,7 @@ body{
     border-radius: 20px;
 }
 
-.desc input[type=submit]:hover{
+.desc input[type=submit]:active{
     background-color: rgb(56, 105, 56);
 }
 
@@ -243,6 +242,7 @@ body{
     height: 900px;
     border-radius: 0 60px 60px 0;
     background-color: rgba(3, 255, 3, 0.026);
+    border-left: 2px solid green;
 }
 
 #right-header{
@@ -367,7 +367,6 @@ body{
 
 #cart-desc input[type=number]:focus{
     border: 0;
-    border-radius: 10px;
 }
 
 #total-price{
@@ -395,6 +394,10 @@ body{
     background-color: rgb(53, 179, 53);
     border: 0;
     border-radius: 20px;
+}
+
+#right-container button:active{
+    background-color: rgb(38, 131, 38);
 }
 
 #right-container input[type=submit]:hover{
@@ -575,6 +578,24 @@ hr.head{
     background-color: rgba(203, 203, 233, 0.404);
     height: 130px;
     width: 180px;
+}
+
+.payment-methods.disabled {
+    pointer-events: none;
+    /* Disable pointer events on the container */
+}
+
+.mastercard.disabled,
+.visa.disabled {
+    opacity: 0.5;
+    /* Make the spans semi-transparent to indicate they're disabled */
+    filter: grayscale(100%);
+    /* Apply grayscale effect to further indicate they're disabled */
+}
+
+.clicked {
+    background-color: rgba(203, 203, 233, 0.404);
+    /* Add a background color to indicate selection */
 }
 
 .inputs{
