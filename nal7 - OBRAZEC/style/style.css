@@ -433,10 +433,10 @@ hr.head{
 
 .popup-container{
     border-radius: 10px;
-    width: 500px; /* Fixed width */
-    height: 800px; /* Fixed height */
+    width: 500px; 
+    height: 800px; 
     position: relative;
-    overflow: auto; /* Allow scrolling if content overflows */
+    overflow: auto; 
 }
 
 
@@ -582,20 +582,17 @@ hr.head{
 
 .payment-methods.disabled {
     pointer-events: none;
-    /* Disable pointer events on the container */
+    
 }
 
 .mastercard.disabled,
 .visa.disabled {
     opacity: 0.5;
-    /* Make the spans semi-transparent to indicate they're disabled */
     filter: grayscale(100%);
-    /* Apply grayscale effect to further indicate they're disabled */
 }
 
 .clicked {
     background-color: rgba(203, 203, 233, 0.404);
-    /* Add a background color to indicate selection */
 }
 
 .inputs{
