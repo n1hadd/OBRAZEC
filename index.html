@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FitMeals Food Delivery</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="icon" type="image/x-icon" href="slike/favicon-16x16.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="left-container">
+            <div id="left-header">
+                <span id="title">
+                    <img src="slike/wolt.webp" alt="">
+                </span>
+            </div>
+            <span id="header"><h1>Categories</h1></span>
+            <div id="categories">             
+                <ul>
+                    <li><a href="#"><img src="slike/burger.png" alt=""></a></li>
+                    <li><a href="#"><img src="slike/pizza.png" alt=""></a></li>
+                    <li><a href="#"><img src="slike/chicken.webp" alt=""></a></li>
+                    <li><a href="#"><img src="slike/pasta.webp" alt=""></a></li>
+                    <li><a href="#"><img src="slike/sliceofcake.png" alt=""></a></li>
+
+                </ul>
+            </div>
+            <span id="heading"><h1>Popular dishes</h1></span>
+            <div id="main">
+                <div>
+                    <div class="photo">
+                        <img src="slike/chicken-breast.png" alt="">
+                    </div>
+                    <div class="desc">
+                        <span class="title"><h4>Chicken Breast </h4></span>
+                        <span class="price"><h5>Price: 8.50$</h5></span>
+                        <span class="rating"><h5>Rating:</h5><img src="slike/rating4.png" alt=""></span>
+                        <span class="button"><input type="submit" value="Add to cart"></span>
+                    </div>
+                    
+                </div>
+
+                <div>
+                    <div class="photo">
+                        <img src="slike/chicken-wrap.png" alt="chicken-wrap">
+                    </div>
+                    <div class="desc">
+                        <span class="title"><h4>Chicken Wrap</h4></span>
+                        <span class="price"><h5>Price: 6.00$</h5></span>
+                        <span class="rating"><h5>Rating:</h5><img src="slike/rating3.png" alt=""></span>
+                        <span class="button"><input type="submit" value="Add to cart"></span>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="photo">
+                        <img src="slike/oats.png" alt="">
+                    </div>
+                    <div class="desc">
+                        <span class="title"><h4>Overnight Oats</h4></span>
+                        <span class="price"><h5>Price: 5.50$</h5></span>
+                        <span class="rating"><h5>Rating:</h5><img src="slike/rating5.png" alt=""></span>
+                        <span class="button"><input type="submit" value="Add to cart"></span>
+                    </div>
+                </div>
+                    
+                <div>
+                    <div class="photo">
+                        <img src="slike/bolognese.png" alt="bolognese">
+                    </div>
+                    <div class="desc">
+                        <span class="title"><h4>Penne Bolognese</h4></span>
+                        <span class="price"><h5>Price: 8.50$</h5></span>
+                        <span class="rating"><h5>Rating:</h5><img src="slike/rating4.png" alt="4-star"></span>
+                        <span class="button"><input type="submit" value="Add to cart"></span>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="photo">
+                        <img src="slike/chicken-burger.png" alt="chicken-burger">
+                    </div>
+                    <div class="desc">
+                        <span class="title"><h4>Chicken Burger</h4></span>
+                        <span class="price"><h5>Price: 5.50$</h5></span>
+                        <span class="rating"><h5>Rating:</h5><img src="slike/rating5.png" alt="5-star"></span>
+                        <span class="button"><input type="submit" value="Add to cart"></span>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="photo">
+                        <img src="slike/blueberry-cheesecake.png" alt="blueberry-cheesecake">
+                    </div>
+                    <div class="desc">
+                        <span class="title"><h4>Blueberry Cake</h4></span>
+                        <span class="price"><h5>Price: 6.50$</h5></span>
+                        <span class="rating"><h5>Rating:</h5><img src="slike/rating4.png" alt="4-star"></span>
+                        <span class="button"><input type="submit" value="Add to cart"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="right-container">
+            <div id="right-header">
+                <h1>Cart</h1><img src="slike/shopping-cart.png" alt="cart">
+            </div>
+            <hr class="new"/>
+            <div id="cart-description">
+                <span class="product"><h4>Product</h4></span>
+                <span class="qty"><h4>Quantity</h4></span>
+            </div>
+            <div id="cart">
+                <div>
+                    <div id="img">
+                        <img src="slike/bolognese.png" alt="bolognese">
+                    </div>
+
+                    <div id="cart-desc">
+                        <span class="description"><p>Penne Bolognese</p><input type="number" min="1" max="10" default:></span>
+                    </div>
+                </div>
+
+                <div>
+                    <div id="img">
+                        <img src="slike/chicken-burger.png" alt="chicken-burger">
+                    </div>
+
+                    <div id="cart-desc">
+                        <span class="description"><p>Chicken Burger</p><input type="number" min="1" max="10"></span>
+                    </div>
+                </div>
+
+                <div>
+                    <div id="img">
+                        <img src="slike/lasanga.png" alt="lasagna">
+                    </div>
+
+                    <div id="cart-desc">
+                        <span class="description"><p>Lasagna</p><input type="number" min="1" max="10"></span>
+                    </div>
+                </div>
+
+                <div>
+                    <div id="img">
+                        <img src="slike/chicken-breast-rice.png" alt="chicken-breast">
+                    </div>
+
+                    <div id="cart-desc">
+                        <span class="description"><p>Chicken Breast, Rice & Veg</p><input type="number" min="1" max="10"></span>
+                    </div>
+                </div>
+                
+                <div>
+                    <div id="img">
+                        <img src="slike/veg-pizza.png" alt="veg-pizza">
+                    </div> 
+
+                    <div id="cart-desc">
+                        <span class="description"><p>Vegetable Pizza</p><input type="number" min="1" max="10"></span>
+                    </div>
+                </div>
+            </div>
+            <hr class="new"/>
+
+            <div id="total-price">
+                <h4>Total: 47.50$</h4>
+            </div>
+            
+            <span class="checkout-button"><button id="showPopup">Continue</button></span>
+        </div>
+    </div>
+
+    <!--|=========================================| PAYMENT |========================================================|-->
+    <div id="popup" class="popup">
+        <div class="popup-container">
+            
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/patterns.js"></script>
+    <script src="js/makePayment.js"></script>
+    <script src="js/paymentMethods.js"></script>
+    <script src="js/zoom.js"></script>
+</body>
+</html>
